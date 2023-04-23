@@ -1,0 +1,2 @@
+Login=twoj@email.com
+Haslo=twojewygenerowanehaslo
