@@ -1,2 +1,2 @@
-Login=twoj@email.com
-Haslo=twojewygenerowanehaslo
+Login=otomotobot@outlook.com
+Haslo=okonokon1

@@ -80,13 +80,18 @@ def Sendemail(cars): #funkcja do wyslania maila
 
                 em.attach(MIMEText(body)) #dolaczenie tresci
                 em.attach(img) #dolaczenie zdjecia
+            if "gmail.com" in email_sender:
+                context = ssl.create_default_context() #kontekst ssl z domyslnymi ustawieniami ssl dla bezpiecznego polaczenia
+                with smtplib.SMTP_SSL("smtp-mail.outlook.com", port=465) as smtp: #otworzenie serwera smtp
+                    smtp.login(email_sender,email_password) #zalogowanie sie na maila
+                    smtp.sendmail(email_sender, email_receiver, em.as_string()) #wyslanie wiadomosci
+            if 'otomotobot@outlook.com' in email_sender:
+                smtp = smtplib.SMTP("smtp.office365.com", port=587)
+                smtp.starttls()
+                smtp.login('otomotobot@outlook.com', email_password)
+                smtp.sendmail(email_sender, email_receiver, em.as_string())
+                smtp.quit()
 
-            context = ssl.create_default_context() #kontekst ssl z domyslnymi ustawieniami ssl dla bezpiecznego polaczenia
-
-            with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp: #otworzenie serwera smtp
-                smtp.login(email_sender,email_password) #zalogowanie sie na maila
-                smtp.sendmail(email_sender, email_receiver, em.as_string()) #wyslanie wiadomosci
-    
 
 def Func_otomoto(message=True):
     for url in Urls:
