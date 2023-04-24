@@ -5,7 +5,7 @@ Musisz ustawić kilka rzeczy:
 3. Stworzenie wirtualnego środowiska
 
 
-Jeżeli nie chcesz żeby program wysyłał ci powiadomień na maila możesz pominąć krok 1 (Musisz ustawić wartość zmiennej message w wywołaniu funkcji Func_otomoto() na False)
+Jeżeli nie chcesz weryfikować e-maila numerem telefonu możesz pominąć 1 krok i nie zmieniać nic w pliku pasy.txt.  
 1. Konfiguracja e-mail
 Udaj się na strone https://myaccount.google.com/security  
 Włącz weryfikacje dwuetapową  
@@ -31,7 +31,7 @@ W plik Urls.txt wpisujesz adresy otomoto z ustawionymi już filtrami które cię
 Linki wpisuj każdy w nowej linii  
 ![image](https://user-images.githubusercontent.com/94761798/233844693-6c3a6c71-5bb7-4a91-a205-56d7d2301144.png)  
 Resztę podpunktu możesz pominąć jeżeli nie chcesz powiadomień e-mail  
-W pliku Pasy.txt wpisz adres e-mail z którego którego będą wysyłane wiadomości oraz wygenerowane wcześniej hasło w taki sposób  
+W pliku Pasy.txt wpisz adres e-mail z którego którego będą wysyłane wiadomości oraz wygenerowane wcześniej hasło w taki sposób  (bez zmian jak pomijasz krok 1)
 ![image](https://user-images.githubusercontent.com/94761798/233844021-a03c634b-b3bf-4995-b021-1155d7d98060.png)  
 W pliku odbiorcy wpisujesz adresy e-mail na ktróre mają być wysyłane powiadomienia każde w nowej linii  
 ![image](https://user-images.githubusercontent.com/94761798/233844110-aa4a4277-0aaa-4ea6-857a-b275cef6b9d0.png)  
